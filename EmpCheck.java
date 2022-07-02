@@ -4,7 +4,9 @@ public class EmpCheck {
 	static int fullday = 8;
 	static int wageperhour = 20;
 	static int parttimehour = 4;
-
+	static int NumberOfWorkingDays=20;
+    static int totalempwage;
+    
 	public static void main(String[] args) {
 
 		Random check1 = new Random();
@@ -15,17 +17,19 @@ public class EmpCheck {
 
 			System.out.println("Employee is present");
 			int DailyEmpWage = fullday * wageperhour;
-			System.out.println("Full day working of Daily Wage of the Employee is: " + DailyEmpWage);
+			totalempwage=NumberOfWorkingDays*DailyEmpWage;
+			System.out.println("Total wage for Full day working of Daily Wage of the Employee is: " +totalempwage);
 			break;
 		case 1:
 			System.out.println("Employee is present");
 			int PartTimeDailyEmpWage = parttimehour * wageperhour;
-			System.out.println("Part time working Daily Wage of the Employee is: " +PartTimeDailyEmpWage);
+			totalempwage=NumberOfWorkingDays*PartTimeDailyEmpWage;
+			System.out.println("Total wage for Part time working Daily Wage of the Employee is: " +totalempwage);
 
 			break;
 		case 2:
 			System.out.println("Employee is absent");
-			System.out.println("Zero Daily Wage because Emp is absent");
+			System.out.println("Total wage is zero because Emp is absent");
 
 			break;
 
