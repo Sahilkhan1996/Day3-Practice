@@ -1,4 +1,3 @@
-
 public interface WageCalculate {
 
     int dayCount = 1;
@@ -6,6 +5,8 @@ public interface WageCalculate {
     int totalWage = 0;
     int dayPresent = 0;
 
-    void totalWage();
+    void calculateTotalWage();
+
+    void getTotalWage();
 
 }
